@@ -17,13 +17,17 @@
 		MemberDao dao = new MemberDao();
 		MemberDto dto = dao.getMember(name);
 		if(dto != null && passwd.equals(dto.getPasswd())) {
-			Cookie cookie = new Cookie("loginOk", name);
+			/* Cookie cookie = new Cookie("loginOk", name);
 			cookie.setPath("/");
 			cookie.setMaxAge(-1);
 			
-			response.addCookie(cookie);
+			response.addCookie(cookie); */
+			session.setAttribute("loginOk", dto);
+			
 			
 			response.sendRedirect("view.jsp");
+		} else {
+			response.sendRedirect("login.jsp");
 		}
 
 	%>
