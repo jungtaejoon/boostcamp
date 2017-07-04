@@ -7,7 +7,8 @@ public class DBUtil {
 	public static Connection getConnection() {
 		Connection connection = null;	
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tododb?useSSL=false", "joon", "tiger");
+			Class.forName("com.mysql.jdbc.Driver");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tododb?useSSL=true", "joon", "tiger");
 			
 		} catch (Exception e) {
 			// TODO: handle exception
