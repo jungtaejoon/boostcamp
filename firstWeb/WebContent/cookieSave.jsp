@@ -16,6 +16,8 @@
 	cookie.setMaxAge(-1); //브라우져 유지 시까지만
 	
 	response.addCookie(cookie);
+	
+	response.sendRedirect("cookieView.jsp");
 %>
 
 </body>

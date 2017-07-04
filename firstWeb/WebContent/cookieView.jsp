@@ -14,7 +14,8 @@
 	for(Cookie cookie : cookies) {
 %>		
 	<tr>
-		<td><% out.print(cookie.getName()); %> </td> <td><% out.print(cookie.getValue()); %></td>
+		<td><%= cookie.getName() %> </td> <td><%= cookie.getValue() %></td>
+		<td><a href="cookieDelete.jsp?cookieName=<%= cookie.getName() %>">쿠키삭제</a></td>
 	</tr>
 	<%} %>
 	
