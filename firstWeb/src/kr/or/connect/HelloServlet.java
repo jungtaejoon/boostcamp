@@ -5,11 +5,8 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-public class HelloServlet extends HttpServlet{
+public class HelloServlet extends HttpServlet {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -33,5 +30,5 @@ public class HelloServlet extends HttpServlet{
 	public void init() throws ServletException {
 		System.out.println("init");
 	}
-	
+
 }
