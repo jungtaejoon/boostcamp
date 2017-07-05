@@ -43,6 +43,19 @@
             <artifactId>spring-expression</artifactId>
             <version>${spring-framework.version}</version>
         </dependency>
+        
+                  <!-- spring test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>

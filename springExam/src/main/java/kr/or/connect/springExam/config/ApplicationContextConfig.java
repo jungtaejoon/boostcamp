@@ -14,14 +14,9 @@ public class ApplicationContextConfig {
 	}
 	
 	@Bean
-	public User user3() {
+	public User user() {
 		User user = new User(name());
 		return user;
 	}
 	
-	@Bean
-	public User user4() {
-		User user = new User("홍길동");
-		return user;
-	}
 }

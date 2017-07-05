@@ -17,15 +17,13 @@ public class SpringApplication {
 		
 		User user1 = (User)context.getBean("user1");
 		User user2 = (User)context.getBean("user2");
-		User user3 = (User)context2.getBean("user3");
-		User user4 = (User)context2.getBean("user4");
+		User user = (User)context2.getBean("user");
 		
 		System.out.println("name : " + name);
 		System.out.println("name2 : " + name2);
 		System.out.println("user1.getName : " + user1.getName());
 		System.out.println("user2.getName : " + user2.getName());
-		System.out.println("user3.getName : " + user3.getName());
-		System.out.println("user4.getName : " + user4.getName());
+		System.out.println("user.getName : " + user.getName());
 		
 		context2.close();
 		context.close();
