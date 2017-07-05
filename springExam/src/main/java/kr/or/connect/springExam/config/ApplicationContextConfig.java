@@ -5,7 +5,6 @@ import org.springframework.context.annotation.*;
 import kr.or.connect.springExam.examples.*;
 
 @Configuration
-@ComponentScan(basePackages = "kr.or.connect.springExam")
 public class ApplicationContextConfig {
 	
 	@Bean
