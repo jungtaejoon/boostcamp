@@ -27,8 +27,8 @@ public class SpringApplication {
 		System.out.println("user3.getName : " + user3.getName());
 		System.out.println("user4.getName : " + user4.getName());
 		
-		context.close();
 		context2.close();
+		context.close();
 	}
 
 }
