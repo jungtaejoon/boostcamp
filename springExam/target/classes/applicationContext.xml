@@ -6,4 +6,12 @@
     <bean id="name" class="java.lang.String">
         <constructor-arg value="joon"/>
     </bean>
+    
+    <bean id="user1" class="kr.or.connect.springExam.examples.User">
+    	<property name="name" ref="name"></property>
+    </bean>
+    
+    <bean id="user2" class="kr.or.connect.springExam.examples.User">
+    	<property name="name" value="정태준"></property>
+    </bean>
 </beans>
