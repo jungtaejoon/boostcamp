@@ -43,4 +43,10 @@ public class MemberDao {
 		Map<String, ?> params = Collections.singletonMap("id", id);
 		return jdbc.update(MemberSqls.DELETE_BY_ID, params);
 	}
+
+	public Member selectByEmail(String email) {
+		Map<String, Object> params = new HashMap<>();
+		params.put("email", email);
+		return jdbc.queryForObject(MemberSqls.SELECT_BY_EMAIL, params, rowMapper);
+	}
 }

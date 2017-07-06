@@ -28,10 +28,14 @@ public class SpringJdbcTest {
 		Long memberPk = memberDao.insert(member);
 
 		Member result = memberDao.selectById(memberPk);
+		Member result2 = memberDao.selectByEmail("carami@nate.com");
 
 		assertThat(result.getName(), is("강경미"));
 		assertThat(result.getEmail(), is("carami@nate.com"));
 		assertThat(result.getPasswd(), is("1234"));
+		assertThat(result2.getName(), is("강경미"));
+		assertThat(result2.getEmail(), is("carami@nate.com"));
+		assertThat(result2.getPasswd(), is("1234"));
 	}
 	
 	@Test
